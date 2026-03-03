@@ -1,3 +1,15 @@
+# TOpPLUG-Hunters
+# **INSTALLATION**
+READ EVERYTHING TO UNDERSTAND 
+
+TOpPLUG HUNTER🕷🐼
+   ## Hello 👋 This is the update for ````https://github.com/Hubdarkweb/TOpPLUG-Hunters.git````
+
+<h1 align="center">ꪶ🐼🕷TOpPLUG🕷🐼-Hunterꫂ<br></h1>
+<p align="center">
+<img src="https://ibb.co/ynPWhfGM, https://ibb.co/Dg8zBCmT" />
+</p>
+
 # BugScanner Web
 
 A modern, fast, and Termux-compatible web interface for the BugScanner core reconnaissance tool.
