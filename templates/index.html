@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BugScanner Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Animated background layers -->
+    <div class="bg-shape shape1"></div>
+    <div class="bg-shape shape2"></div>
+    <div class="bg-shape shape3"></div>
+
+    <div class="app-container glass-panel">
+        <header>
+            <h1><span class="highlight">Bug</span>Scanner</h1>
+            <p>Advanced Web Reconnaissance</p>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <form id="scanForm" class="glass-form">
+                    <div class="form-group">
+                        <label for="target">Target(s) / CIDR</label>
+                        <textarea id="target" name="target" placeholder="example.com,192.168.1.1&#10;or 192.168.1.0/24" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mode">Profile / Mode</label>
+                        <select id="mode" name="mode">
+                            <option value="direct">Direct Scan</option>
+                            <option value="proxy">Proxy Scan</option>
+                            <option value="ssl">SSL Scan</option>
+                            <option value="udp">UDP Scan</option>
+                            <option value="ws">WebSocket Scan</option>
+                            <option value="ping">Ping Scan</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ports">Ports (comma separated)</label>
+                        <input type="text" id="ports" name="ports" value="80,443,8080">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="method">Method (comma separated)</label>
+                        <input type="text" id="method" name="method" value="head,get">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="threads">Threads</label>
+                        <input type="number" id="threads" name="threads" value="25" min="1">
+                    </div>
+                    
+                    <div class="form-group" id="proxyGroup" style="display:none;">
+                        <label for="proxy">Proxy (host:port)</label>
+                        <input type="text" id="proxy" name="proxy" placeholder="127.0.0.1:8080">
+                    </div>
+
+                    <button type="submit" id="btnScan" class="btn-primary">
+                        <span class="btn-text">Start Scan</span>
+                        <div class="spinner" id="btnSpinner"></div>
+                    </button>
+                    <button type="button" id="btnCancel" class="btn-secondary" style="display:none;">Cancel Scan</button>
+                </form>
+            </aside>
+
+            <section class="scan-workspace">
+                <div class="command-preview glass-panel-inner">
+                    <span class="label">Command:</span>
+                    <code id="cmdPreview">python3 scanner.py ...</code>
+                </div>
+
+                <div class="terminal-container glass-panel-inner">
+                    <div class="terminal-header">
+                        <div class="mac-btns">
+                            <span class="mac-btn close"></span>
+                            <span class="mac-btn minimize"></span>
+                            <span class="mac-btn maximize"></span>
+                        </div>
+                        <span class="term-title">Output Console</span>
+                    </div>
+                    <div class="terminal-body" id="termOutput">
+                        <div class="term-line intro-text">BugScanner v2.0 Web Interface</div>
+                        <div class="term-line intro-text">Awaiting input...</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
