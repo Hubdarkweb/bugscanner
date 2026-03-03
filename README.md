@@ -1,8 +1,12 @@
+<h1 align="center">ꪶ🐼🕷TOpPLUG🕷🐼-Hunterꫂ<br></h1>
+<p align="center">
+<img src="https://ibb.co/ynPWhfGM.jpeg" />
+<img src="https://ibb.co/Dg8zBCmT.jpeg" />
+</p>
+
 # BugScanner Web
 
 A modern, fast, and Termux-compatible web interface for the BugScanner core reconnaissance tool.
-
-![Screenshot](https://via.placeholder.com/800x450.png?text=BugScanner+Web+Interface) *(Screenshot placeholder)*
 
 BugScanner Web wraps a customized Python reconnaissance script into an elegant web application reminiscent of Zenmap. The UI features stunning glassmorphism styles, fluid animations, and utilizes Server-Sent Events (SSE) to stream live terminal output back to your browser without hanging or reloading.
 
