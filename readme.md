@@ -5,17 +5,14 @@ READ EVERYTHING TO UNDERSTAND
 TOpPLUG HUNTER🕷🐼
    ## Hello 👋 This is the update for ````https://github.com/Hubdarkweb/TOpPLUG-Hunters.git````
 
-<h1 align="center">ꪶ🐼🕷TOpPLUG🕷🐼-Hunterꫂ<br></h1>
-<p align="center">
-<img src="https://ibb.co/ynPWhfGM.jpeg, https://ibb.co/9HvHPHTV, https://ibb.co/Dg8zBCmT.jpeg" />
-</p>
+
 <h1 align="center">ꪶ🐼🕷TOpPLUG🔫🗽🏴‍☠️🎳-Hunterꫂ<br></h1>
 <p align="center">
-<img src="https://i.imgur.com/nB8i4tq.jpeg" />
+<img src="https://i.ibb.co/B2P2k2Zr/Screenshot-20260303-093310.png" />
 </p>
 <h1 align="center">ꪶ🐼🕷TOpPLUG🥷✈️🛸-Hunterꫂ<br></h1>
 <p align="center">
-<img src="https://i.imgur.com/hoRK15o.jpeg" />
+<img src="https://i.ibb.co/Nnmt0jfb/IMG-20260303-091841.jpg" />
 </p>
 
 # BugScanner Web
